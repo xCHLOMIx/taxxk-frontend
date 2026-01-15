@@ -13,7 +13,7 @@ import {
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 
-export function LoginForm({
+export function SignUpForm({
   className,
   ...props
 }: React.ComponentProps<"div">) {
@@ -85,7 +85,7 @@ export function LoginForm({
             </a>
             <h1 className="text-xl font-bold">Welcome to Taxxk.</h1>
             <FieldDescription>
-              Don&apos;t have an account? <Link href="sign-up">Sign up</Link>
+              Already have an account? <Link href="sign-in">Sign in</Link>
             </FieldDescription>
           </div>
           <Field>
@@ -93,7 +93,17 @@ export function LoginForm({
             <Input
               id="username"
               type="text"
-              placeholder="m@example.com"
+              placeholder="e.g John"
+              className="p-3 h-max focus:border-black/20"
+              required
+            />
+          </Field>
+          <Field>
+            <FieldLabel htmlFor="email">Email</FieldLabel>
+            <Input
+              id="email"
+              type="email"
+              placeholder="e.g m@example.com"
               className="p-3 h-max focus:border-black/20"
               required
             />
@@ -123,7 +133,7 @@ export function LoginForm({
           </Field>
           <Field>
             <Button type="submit" className="p-3 cursor-pointer h-max">
-              Login
+              Sign Up
             </Button>
           </Field>
         </FieldGroup>
