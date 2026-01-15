@@ -100,7 +100,7 @@ export function LoginForm({
           </Field>
           <Field>
             <FieldLabel htmlFor="passcode">Passcode</FieldLabel>
-            <div className="grid grid-cols-6 gap-2">
+            <div className="grid grid-cols-6 gap-3">
               {Array.from({ length: 6 }).map((_, index) => (
                 <Input
                   key={index}
@@ -114,7 +114,7 @@ export function LoginForm({
                   onChange={(e) => handleInputChange(index, e.target.value)}
                   onKeyDown={(e) => handleKeyDown(index, e)}
                   onPaste={handlePaste}
-                  className="p-3 py-4 text-center h-max focus:border-black/20"
+                  className="p-3 py-3.5 text-center h-max focus:border-black/20"
                   maxLength={1}
                   required
                 />
