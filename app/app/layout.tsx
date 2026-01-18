@@ -8,7 +8,7 @@ export default function RootLayout({
   return (
     <>
       <Sidebar />
-      <div className="px-12">{children}</div>
+      <div className="px-12 w-full flex justify-center">{children}</div>
     </>
   );
 }
