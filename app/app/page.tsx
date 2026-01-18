@@ -8,8 +8,9 @@ export default function Home() {
         <Input
           id="username"
           type="text"
-          placeholder="e.g Do my chores"
+          placeholder="e.g Do my homework..."
           className="p-2 h-max rounded-none shadow-none bg-white border-none"
+          autoComplete="false"
           required
         />
         <div className="bg-primary w-max p-2 rounded-full text-white">
